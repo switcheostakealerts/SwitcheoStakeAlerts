@@ -160,11 +160,11 @@ def alertMessageSigningInfos(changes):
         #Block height error
         if len(changes)==1:
             if 'error' in changes[0]:
-                return '0'
+                return False,'error'
 
         #No change
         if len(changes) == 0:
-            return '1'
+            return False, 'no_change'
 
         #Change in jail status
         if len(changes)>0:
@@ -174,8 +174,10 @@ def alertMessageSigningInfos(changes):
                 name = getMonikerFromConsAddress(m['address']) or m['address']
                 message.append('Validator ' + name + ' has been jailed until '+ time + ' for missing too many blocks. Tokens delegated to this validator have been slashed.')
 
-        return message
+        return True, message
 
+def sendMessage(message):
+    print(message)
 
 def main():
 
@@ -187,17 +189,27 @@ def main():
     while True:
         
         new_signing_infos = getNewSigningInfos()
+
         changes = getChangeInSigningInfos(old_signing_infos, new_signing_infos)
-        message = alertMessageSigningInfos(changes)
+
+        status, message = alertMessageSigningInfos(changes)
+
         print(changes, message)
 
-        if message == '0':
+        if message == 'error':
             time.sleep(5)
-            continue
+            continue    
    
+
+        if status:
+            for m in message:
+                sendMessage(m)
+
         print('  Updating signing_infos.json')
         old_signing_infos = new_signing_infos
         saveJSONToFile(old_signing_infos, 'signing_infos.json')
+
+
 
         time.sleep(60)
 

@@ -124,29 +124,34 @@ class TestAlertMessageSigningInfos(unittest.TestCase):
         self.data9 = AlertBots.loadJSONFromFile('Tests/signing_infos_test9.json')
 
     def test_alert_0(self):
-        message = AlertBots.alertMessageSigningInfos([{'error': 'New Block Height is not larger than old block height'}])
-        self.assertEqual(message,'0')
+        status,message = AlertBots.alertMessageSigningInfos([{'error': 'New Block Height is not larger than old block height'}])
+        self.assertFalse(status,False)
+        self.assertEqual(message,'error')
 
     def test_alert_2(self):
-        message = AlertBots.alertMessageSigningInfos([])
-        self.assertEqual(message,'1')
+        status,message = AlertBots.alertMessageSigningInfos([])
+        self.assertFalse(status)
+        self.assertEqual(message,'no_change')
 
     def test_alert_3(self):
         changes = [ {'address':'abc', 'jailed_until': datetime.datetime(2021, 3, 10, 11, 44, 20)} ]
-        message = AlertBots.alertMessageSigningInfos(changes)
+        status,message = AlertBots.alertMessageSigningInfos(changes)
         print(message)
+        self.assertTrue(status)
         self.assertEqual(len(message),1)
 
     def test_alert_4(self):
         changes = [{'address':'abc', 'jailed_until':datetime.datetime(2000, 3, 10, 11, 44, 20)},{'address':'abcd', 'jailed_until':datetime.datetime(2021, 4, 20, 0, 6, 9)}]
-        message = AlertBots.alertMessageSigningInfos(changes)
+        status,message = AlertBots.alertMessageSigningInfos(changes)
         print(message)
+        self.assertTrue(status)
         self.assertEqual(len(message),2)
 
     def test_alert_5(self):
         changes = AlertBots.getChangeInSigningInfos(self.data1,self.data8)
-        message = AlertBots.alertMessageSigningInfos(changes)
+        status,message = AlertBots.alertMessageSigningInfos(changes)
         print(message)
+        self.assertTrue(status)
         self.assertEqual(len(message),2)
 
 
