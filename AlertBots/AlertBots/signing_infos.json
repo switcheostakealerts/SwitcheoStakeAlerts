@@ -1,17 +1,17 @@
 {
-    "height": "11409013",
+    "height": "11412245",
     "result": [
         {
             "address": "swthvalcons1q0a0pk2kjxd8xdjrf2mg6afuwdh4mrp9xst7dk",
-            "index_offset": "10182877",
+            "index_offset": "10186109",
             "jailed_until": "1970-01-01T00:00:00Z",
-            "missed_blocks_counter": "5",
+            "missed_blocks_counter": "6",
             "start_height": "1225597",
             "tombstoned": false
         },
         {
             "address": "swthvalcons1pqnlj0na6k8u9y27j3elrx584mt3380dal0j9s",
-            "index_offset": "8476001",
+            "index_offset": "8479233",
             "jailed_until": "1970-01-01T00:00:00Z",
             "missed_blocks_counter": "2",
             "start_height": "2933010",
@@ -19,7 +19,7 @@
         },
         {
             "address": "swthvalcons1zgth3zfku58gqzayaewwtkd6j97jprmfvhzv5p",
-            "index_offset": "2763263",
+            "index_offset": "2766495",
             "jailed_until": "2021-03-15T21:41:26.57249385Z",
             "missed_blocks_counter": "11",
             "start_height": "3490869",
@@ -27,7 +27,7 @@
         },
         {
             "address": "swthvalcons1zecfdrf22f6syz8xj4vn8jsvsalxdhwl9tlflk",
-            "index_offset": "2786362",
+            "index_offset": "2789594",
             "jailed_until": "2021-02-10T11:44:20.204519008Z",
             "missed_blocks_counter": "24",
             "start_height": "287928",
@@ -35,15 +35,15 @@
         },
         {
             "address": "swthvalcons1rpjrmjqmpt8ucw5snp24smrysxs66xq23pt9z6",
-            "index_offset": "158737",
+            "index_offset": "161969",
             "jailed_until": "2021-05-18T18:02:12.740072493Z",
-            "missed_blocks_counter": "4",
+            "missed_blocks_counter": "5",
             "start_height": "6189536",
             "tombstoned": false
         },
         {
             "address": "swthvalcons1rf8k08jlj7lfxl8se7nl4uj95h7suyszcvn4tl",
-            "index_offset": "10177129",
+            "index_offset": "10180361",
             "jailed_until": "1970-01-01T00:00:00Z",
             "missed_blocks_counter": "0",
             "start_height": "1231882",
@@ -51,39 +51,39 @@
         },
         {
             "address": "swthvalcons1ytlw2pjljh452crsffmglrrh84hs88upqgcujx",
-            "index_offset": "3547946",
+            "index_offset": "3551178",
             "jailed_until": "2021-02-24T12:11:39.579001257Z",
-            "missed_blocks_counter": "12",
+            "missed_blocks_counter": "14",
             "start_height": "249099",
             "tombstoned": false
         },
         {
             "address": "swthvalcons1yv4v5q0wygl4aypnsr63fkyyuz87vhyh76qzp7",
-            "index_offset": "11166258",
+            "index_offset": "11169490",
             "jailed_until": "1970-01-01T00:00:00Z",
-            "missed_blocks_counter": "151",
+            "missed_blocks_counter": "208",
             "start_height": "242753",
             "tombstoned": false
         },
         {
             "address": "swthvalcons1xg07uszmnvlxlkf6u4ymmfx2fzq67fa026l9g6",
-            "index_offset": "4087276",
+            "index_offset": "4090508",
             "jailed_until": "2021-02-10T12:27:28.847585487Z",
-            "missed_blocks_counter": "11",
+            "missed_blocks_counter": "10",
             "start_height": "268203",
             "tombstoned": false
         },
         {
             "address": "swthvalcons1xvpttgc3fjwwlefl5axvap5dsq8td67vvxxm5k",
-            "index_offset": "10529685",
+            "index_offset": "10532917",
             "jailed_until": "1970-01-01T00:00:00Z",
-            "missed_blocks_counter": "13",
+            "missed_blocks_counter": "14",
             "start_height": "879326",
             "tombstoned": false
         },
         {
             "address": "swthvalcons18sdaxkk6c6kcqdsuhnrndu6wedkrung24ktjt6",
-            "index_offset": "4127160",
+            "index_offset": "4130392",
             "jailed_until": "2021-02-04T13:33:13.001939191Z",
             "missed_blocks_counter": "3",
             "start_height": "248744",
@@ -91,7 +91,7 @@
         },
         {
             "address": "swthvalcons1gdmnztf3lxdlj8wzu4629p9jlhv5dk9rhcuv4s",
-            "index_offset": "11164727",
+            "index_offset": "11167959",
             "jailed_until": "1970-01-01T00:00:00Z",
             "missed_blocks_counter": "15",
             "start_height": "244284",
@@ -99,7 +99,7 @@
         },
         {
             "address": "swthvalcons12yxtzg2ur7l8h9xhuhmvnjplr6e6vkpgqs6unr",
-            "index_offset": "3744411",
+            "index_offset": "3747643",
             "jailed_until": "1970-01-01T00:00:00Z",
             "missed_blocks_counter": "0",
             "start_height": "7664600",
@@ -107,17 +107,17 @@
         },
         {
             "address": "swthvalcons127rdedwxf0m474fj4z9t78he9g8m8gevqq0zyu",
-            "index_offset": "2779078",
+            "index_offset": "2782310",
             "jailed_until": "2021-02-10T11:38:42.426430213Z",
-            "missed_blocks_counter": "266",
+            "missed_blocks_counter": "265",
             "start_height": "6016",
             "tombstoned": false
         },
         {
             "address": "swthvalcons1t7pxus2dc87786x5998zgxgk80unaj4tjwh0lz",
-            "index_offset": "11035377",
+            "index_offset": "11038609",
             "jailed_until": "2020-08-22T11:20:20.943103221Z",
-            "missed_blocks_counter": "12",
+            "missed_blocks_counter": "13",
             "start_height": "249042",
             "tombstoned": false
         },
@@ -131,7 +131,7 @@
         },
         {
             "address": "swthvalcons1d0t99ynnfrfd9p79chln3n3wv2ch8ytvga8lh9",
-            "index_offset": "4377070",
+            "index_offset": "4380302",
             "jailed_until": "2021-01-27T20:00:58.512462896Z",
             "missed_blocks_counter": "1",
             "start_height": "2638197",
@@ -139,9 +139,9 @@
         },
         {
             "address": "swthvalcons1dlcg7nd8c6tvnc5hnxjazfmgep4n0r5263lhtt",
-            "index_offset": "11409012",
+            "index_offset": "11412244",
             "jailed_until": "1970-01-01T00:00:00Z",
-            "missed_blocks_counter": "6",
+            "missed_blocks_counter": "7",
             "start_height": "0",
             "tombstoned": false
         },
@@ -155,9 +155,9 @@
         },
         {
             "address": "swthvalcons14q05c2cxf3cxy23z4da4h5zh65k4f8f88kwdhc",
-            "index_offset": "4272313",
+            "index_offset": "4275545",
             "jailed_until": "2021-02-04T13:33:20.694833366Z",
-            "missed_blocks_counter": "16",
+            "missed_blocks_counter": "17",
             "start_height": "528749",
             "tombstoned": false
         },

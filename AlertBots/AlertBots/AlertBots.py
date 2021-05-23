@@ -4,6 +4,7 @@ import time
 import os.path
 import sys
 import datetime
+import twitter
 
 
 def getJSONFromUrl(fetch_url):
@@ -176,14 +177,15 @@ def alertMessageSigningInfos(changes):
 
         return True, message
 
-def sendMessage(message):
-    print(message)
+# def sendMessage(message):
+#     api.update_status("Test tweet from Tweepy Python")
 
 def main():
 
     #print(os.path)
     #print(sys.path)
     #print(os.path.dirname(__file__))
+    twitterAPI = twitter.setupTwitterBot()
 
     old_signing_infos = loadJSONFromFile('signing_infos.json')
     while True:
@@ -203,7 +205,7 @@ def main():
 
         if status:
             for m in message:
-                sendMessage(m)
+                twitterAPI.update_status(m)
 
         print('  Updating signing_infos.json')
         old_signing_infos = new_signing_infos
